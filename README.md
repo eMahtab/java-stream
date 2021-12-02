@@ -140,4 +140,7 @@ public class Main{
   }
 }
   
-```  
+``` 
+  
+# References :
+https://app.pluralsight.com/guides/java-8-stream-api-part-1  
