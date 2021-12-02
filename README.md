@@ -125,3 +125,19 @@ public class Main{
 }
   
 ```  
+
+### Passing Comparator :  
+```java
+import java.util.*;
+import java.util.stream.*;
+
+public class Main{
+  public static void main(String[] args) {
+    List<String> strings = Arrays.asList("Stream","Operations","on","Collections");
+    strings.stream().min(Comparator.comparing(
+                        (String s) -> s.length())
+    ).ifPresent(System.out::println); // on
+  }
+}
+  
+```  
