@@ -90,6 +90,7 @@ public class Main{
 Count : 10
 20  
 ```
+# sum() :  
   
 ```java
 import java.util.stream.*;
@@ -100,3 +101,15 @@ public class Main{
   }
 }  
 ```  
+# average() :  
+  
+```java
+import java.util.stream.*;
+
+public class Main{
+  public static void main(String[] args) {
+    System.out.println(IntStream.of(28,4,91,30).average().getAsDouble()); // 38.25
+  }
+}
+  
+```
