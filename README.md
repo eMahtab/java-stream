@@ -47,6 +47,9 @@ k
 m
 ```  
   
+  
+After the terminal operation is performed, the stream pipeline is consumed and can't be used anymore.
+  
 ```java
 import java.util.stream.*;
 
