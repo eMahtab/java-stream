@@ -60,4 +60,11 @@ public class Main{
 }
   
 ```  
-
+## Output :
+```
+Exception in thread "main" java.lang.IllegalStateException: stream has already been operated upon or closed
+    at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:229)
+    at java.base/java.util.stream.IntPipeline.findFirst(IntPipeline.java:528)
+    at Main.main(Main.java:8)  
+  
+```
