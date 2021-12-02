@@ -113,3 +113,15 @@ public class Main{
 }
   
 ```
+# min() , max()
+```java
+import java.util.stream.*;
+
+public class Main{
+  public static void main(String[] args) {
+    System.out.println(IntStream.of(28,4,91,30).min().getAsInt()); // 4
+    System.out.println(IntStream.of(28,4,91,30).max().getAsInt()); // 91
+  }
+}
+  
+```  
