@@ -39,4 +39,11 @@ public class Main{
   }
 }
 ```
+  
+## Output:
+```
+c
+k
+m
+```  
 
