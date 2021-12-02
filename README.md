@@ -71,3 +71,22 @@ Exception in thread "main" java.lang.IllegalStateException: stream has already b
     at Main.main(Main.java:8)  
   
 ```
+
+```java
+import java.util.stream.*;
+
+public class Main{
+  public static void main(String[] args) {
+    int[] digits = {20, 1, 2, 3, 4 , 5, 6, 7, 8, 9};
+    long n = IntStream.of(digits).count();
+    System.out.println("Count : " + n);
+    System.out.println(IntStream.of(digits).findFirst().getAsInt());
+  }
+} 
+```  
+
+## Output :
+```
+Count : 10
+20  
+```  
