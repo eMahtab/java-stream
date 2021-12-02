@@ -24,4 +24,19 @@ String[] words = {"hello", "hola", "hallo", "ciao"};
 Stream<String> stream = Stream.of(words);
 ```
 
+  
+```java
+import java.util.stream.*;
+
+public class Main{
+  public static void main(String[] args) {
+    Stream<String> stream = Stream.of("t", "k", "c", "m")
+    .sorted()
+    .limit(3);
+    
+    // Print the stream
+    stream.forEach(s -> System.out.println(s));
+  }
+}
+```
 
