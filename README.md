@@ -46,4 +46,18 @@ c
 k
 m
 ```  
+  
+```java
+import java.util.stream.*;
+
+public class Main{
+  public static void main(String[] args) {
+    int[] digits = {0, 1, 2, 3, 4 , 5, 6, 7, 8, 9};
+    IntStream s = IntStream.of(digits);
+    long n = s.count();
+    System.out.println(s.findFirst()); // An exception will be thrown
+  }
+}
+  
+```  
 
