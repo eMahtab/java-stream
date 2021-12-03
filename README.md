@@ -47,7 +47,7 @@ k
 m
 ```  
   
-  
+## Java 8 streams can't be reused  
 After the terminal operation is performed, the stream pipeline is consumed and can't be used anymore.
   
 ```java
