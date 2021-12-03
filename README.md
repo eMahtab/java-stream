@@ -144,9 +144,9 @@ public class Main{
   
 # range() , rangeClosed()
 	
-The range(int startInclusive, int endExclusive) method creates an ordered stream from the first parameter to the second parameter. It increments the value of subsequent elements with the step equal to 1. The result doesn't include the last parameter, it is just an upper bound of the sequence.
+The ```range(int startInclusive, int endExclusive)``` method creates an ordered stream from the first parameter to the second parameter. It increments the value of subsequent elements with the step equal to 1. The result doesn't include the last parameter, it is just an upper bound of the sequence.
 
-The rangeClosed(int startInclusive, int endInclusive) method does the same thing with only one difference, the second element is included.	
+The ```rangeClosed(int startInclusive, int endInclusive)``` method does the same thing with only one difference, the second element is included.	
 	
 ```java
 import java.util.stream.IntStream;
