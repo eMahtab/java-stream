@@ -142,5 +142,23 @@ public class Main{
   
 ``` 
   
+# range() , rangeClosed()
+```java
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
+
+public class App {
+	public static void main(String[] args) {
+		
+		IntStream intStream = IntStream.range(1,5);
+		intStream.forEach((item) -> System.out.print(item + " ")); // 1 2 3 4 
+		System.out.println();
+		LongStream longStream = LongStream.rangeClosed(1,5);
+		longStream.forEach((item) -> System.out.print(item + " ")); // 1 2 3 4 5 
+	}
+}  
+```  
+  
+  
 # References :
 https://app.pluralsight.com/guides/java-8-stream-api-part-1  
