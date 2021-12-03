@@ -162,7 +162,21 @@ public class App {
 		longStream.forEach((item) -> System.out.print(item + " ")); // 1 2 3 4 5 
 	}
 }  
-```  
+```
+	
+# map()
+```java
+import java.util.*;
+import java.util.stream.*;
+
+public class Main{
+  public static void main(String[] args) {
+    List<Integer> list = Arrays.asList(3, 6, 9, 12, 15);
+    list.stream().map(number -> number * 3)
+    .forEach((n) -> System.out.print(n + " ")); // 9 18 27 36 45 
+  }
+}	
+```	
   
   
 # References :
