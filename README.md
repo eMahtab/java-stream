@@ -191,6 +191,27 @@ public class Main{
     System.out.println(answer);  // [JAVA, STREAM]
   }
 }	  
-```  
+```
+	
+```java
+import java.util.*;
+import java.util.stream.*;
+
+public class Main{
+  public static void main(String[] args) {
+    List<String> list = Arrays.asList("java", "Stream");
+    list.stream().map(str -> str.length())
+    .forEach(System.out::println);
+  }
+}
+```
+
+### Output :
+```
+4
+6	
+```	
+	
+	
 # References :
 https://app.pluralsight.com/guides/java-8-stream-api-part-1  
