@@ -177,7 +177,20 @@ public class Main{
   }
 }	
 ```	
-  
-  
+	
+```java
+import java.util.*;
+import java.util.stream.*;
+
+public class Main{
+  public static void main(String[] args) {
+    List<String> list = Arrays.asList("java", "Stream");
+    List<String> answer = list.stream().map(String::toUpperCase).
+                          collect(Collectors.toList());
+    // displaying the new stream of UpperCase Strings
+    System.out.println(answer);  // [JAVA, STREAM]
+  }
+}	  
+```  
 # References :
 https://app.pluralsight.com/guides/java-8-stream-api-part-1  
