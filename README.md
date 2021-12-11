@@ -233,7 +233,46 @@ public class Main {
 3
 6
 15	
+```
+	
+# filter()
+```java
+import java.util.*;
+import java.util.stream.*;
+
+class Customer {
+   private String name;
+   private int points;
+
+   Customer(String name, int points) {
+     this.name = name;
+     this.points = points;
+   }
+   public int getPoints(){
+     return this.points;
+   }
+   public String toString() {
+     return this.name + " " + this.points;
+   }
+}
+public class Main {
+  public static void main(String[] args) {
+    Customer john = new Customer("John", 15);
+    Customer sarah = new Customer("Sarah", 200);
+    Customer charles = new Customer("Charles", 150);
+    Customer mary = new Customer("Mary", 1);
+
+    List<Customer> customers = Arrays.asList(john, sarah, charles, mary);
+  
+    List<Customer> customersWithMoreThan100Points = customers
+              .stream()
+              .filter(c -> c.getPoints() > 100)
+              .collect(Collectors.toList());
+    System.out.println(customersWithMoreThan100Points); // [Sarah 200, Charles 150]         
+  }
+}	
 ```	
 	
 # References :
-https://app.pluralsight.com/guides/java-8-stream-api-part-1  
+1. https://app.pluralsight.com/guides/java-8-stream-api-part-1  
+2. https://www.baeldung.com/java-stream-filter-lambda	
