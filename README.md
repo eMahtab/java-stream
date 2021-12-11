@@ -235,7 +235,7 @@ public class Main {
 15	
 ```
 	
-# filter()
+# filter() and collect()
 ```java
 import java.util.*;
 import java.util.stream.*;
