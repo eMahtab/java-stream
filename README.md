@@ -211,7 +211,29 @@ public class Main{
 4
 6	
 ```	
-	
+
+# mapToInt()
+```java	
+import java.util.*;
+
+public class Main {
+  public static void main(String[] args) {
+     // Creating a list of Strings
+    List<String> list = Arrays.asList("3", "6", "8", "14", "15");
+  
+  
+    list.stream().mapToInt(num -> Integer.parseInt(num))
+                 .filter(num -> num % 3 == 0)
+                 .forEach(System.out::println);
+  }
+}
+```
+### Output :
+```
+3
+6
+15	
+```	
 	
 # References :
 https://app.pluralsight.com/guides/java-8-stream-api-part-1  
