@@ -271,6 +271,13 @@ public class Main {
     System.out.println(customersWithMoreThan100Points); // [Sarah 200, Charles 150]         
   }
 }	
+```
+	
+### reduce
+```java
+int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int sum = Arrays.stream(numbers).reduce(0, (a, b) -> a + b);
+System.out.println("sum : " + sum); // 55	
 ```	
 	
 # References :
