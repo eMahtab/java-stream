@@ -285,6 +285,12 @@ We can further simplify the accumulator lambda expression `(a, b) -> a + b` by u
 int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 int sum = Arrays.stream(numbers).reduce(0, Integer::sum);
 System.out.println("sum : " + sum); // 55	
+```
+
+```java
+int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int sum = Arrays.stream(numbers).reduce(0, (a, b) -> a - b);
+System.out.println("sum : " + sum); // -55	
 ```	
 	
 # References :
